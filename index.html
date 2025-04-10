@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+	<main class="calculator" role="application" aria-label="Калькулятор">
+		<section class="calculator__display" aria-live="polite" id="display">
+			<p>0</p>
+		</section>
+
+		<section class="calculator__buttons">
+			<button type="button" class="calculator__button calculator__button--clearall" data-action="clear">C</button>
+			<button type="button" class="calculator__button calculator__button--clear" data-action="backspace" aria-label="Удалить последний символ">←</button>
+			<button type="button" class="calculator__button calculator__button--operator" data-value="/">÷</button>
+			<button type="button" class="calculator__button calculator__button--operator" data-value="*">×</button>
+
+			<button type="button" class="calculator__button" data-value="7">7</button>
+			<button type="button" class="calculator__button" data-value="8">8</button>
+			<button type="button" class="calculator__button" data-value="9">9</button>
+			<button type="button" class="calculator__button calculator__button--operator" data-value="-">−</button>
+
+			<button type="button" class="calculator__button" data-value="4">4</button>
+			<button type="button" class="calculator__button" data-value="5">5</button>
+			<button type="button" class="calculator__button" data-value="6">6</button>
+			<button type="button" class="calculator__button calculator__button--operator" data-value="+">+</button>
+
+			<button type="button" class="calculator__button" data-value="1">1</button>
+			<button type="button" class="calculator__button" data-value="2">2</button>
+			<button type="button" class="calculator__button" data-value="3">3</button>
+			<button type="button" class="calculator__button calculator__button--equal" data-action="calculate" aria-label="Вычислить">=</button>
+
+			<button type="button" class="calculator__button calculator__button--zero" data-value="0">0</button>
+			<button type="button" class="calculator__button" data-value=".">.</button>
+		</section>
+	</main>
+	<script src="/script/main.js"></script>
+</body>
+
+</html>
